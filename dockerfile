@@ -5,7 +5,8 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy your index.html to nginx directory
-COPY ./App/** /usr/share/nginx/html/
+COPY App/ /usr/share/nginx/html/
+
 
 # Expose port 80
 EXPOSE 80
