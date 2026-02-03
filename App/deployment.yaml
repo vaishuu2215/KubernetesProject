@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployments
+spec:
+  selector:
+    matchLabels:
+      app: stream-flixs
+  template:
+    metadata:
+      labels:
+        app: streamflixs
+    spec:
+      containers:
+      - name: coco
+        image: vaishnavimalini/kuku 
+        ports:
+          - containerPort: 80
